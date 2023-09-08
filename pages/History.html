@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Swatah.ai</title>
+    <!-- File Css Main -->
+    <link href="../dist/output.css" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Start Header -->
+    <nav class='py-5 sticky top-0 z-10 bg-white' style="box-shadow: 0 0.5rem 1rem rgb(0 0 0 / 15%);">
+        <div class='container flex justify-between items-center mx-auto'>
+            <img src="../assets/logo.webp" alt="" class='w-[150px] ' />
+            <div class='flex space-x-5 items-center'>
+                <p class='user_name text-center text-[20px] font-semibold sm:block hidden'></p>
+                <button id="signout"
+                    class="bg-primary rounded-[25px] py-[10px] px-[30px] font-semibold text-[15px] text-white  border-[1px] border-solid border-primary duration-500 hover:bg-transparent hover:text-primary">Sign
+                    out</button>
+            </div>
+        </div>
+        <p class="user_name text-center text-[20px] font-semibold mt-2 sm:hidden block"></p>
+    </nav>
+    <!-- End Header -->
+    <!-- Start Switch -->
+    <div class="pt-10">
+        <div class="container overflow-auto mx-auto">
+            <div class="flex justify-center mx-auto">
+                <div class="buttons  rounded-[10px] border-[1px] border-solid border-primary">
+                    <a href="./Dashboard.html"
+                        class="bg-white inline-block text-primary py-[10px] px-[25px] text-[17px] font-semibold cursor-pointer duration-500 rounded-tl-[10px] rounded-bl-[10px]">My
+                        Dashboard</a>
+                    <a href="./History.html"
+                        class="bg-primary inline-block text-white py-[10px] px-[25px] text-[17px] font-semibold cursor-pointer duration-500 rounded-tr-[10px] rounded-br-[10px]">
+                        My History</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Switch -->
+    <!-- Start History -->
+    <div class="pt-12 h-[100vh]">
+        <div class="container overflow-auto mx-auto">
+            <table class="w-full overflow-auto">
+                <thead>
+                    <tr>
+                        <th>Date and Time</th>
+                        <th>Job Title</th>
+                        <th>Link</th>
+                        <th>Applied @ Job Score</th>
+                    </tr>
+                </thead>
+                <tbody id="body_table">
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <!-- End History -->
+    <!-- Script Dashboard In File -->
+    <script src="../js/history.js"></script>
+</body>
+
+</html>

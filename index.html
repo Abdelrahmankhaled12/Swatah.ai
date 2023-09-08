@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Swatah.ai</title>
+    <!-- File Css Main -->
+    <link href="./dist/output.css" rel="stylesheet">
+    <!-- Font AweSome -->
+    <script src="https://kit.fontawesome.com/49f02d4a75.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <!-- Start Log in -->
+    <div class="login h-[100vh]">
+        <div class="container flex justify-center items-center h-full mx-auto ">
+            <div class='bg-white p-10 rounded-[10px] shadow-[0_2px_10px_rgba(0,0,0,0.3)]'>
+                <img src="./assets/logo.webp" alt="" class='w-[200px] mx-auto my-[20px]' />
+                <form class="sm:w-[500px]">
+                    <div class='relative mb-4'>
+                        <input type="email" placeholder="Email" id="email"
+                            class="w-full bg-[#e6e6e6] rounded-[4px] outline-none text-black py-[10px] px-[35px] border-[1px] border-solid border-[#e6e6e6] placeholder:text-[#777] placeholder:text-[18px] placeholder:font-semibold"
+                            required />
+                        <i class="fa-solid fa-envelope text-[20px] text-primary absolute left-[10px] top-[27%]"></i>
+                    </div>
+                    <div class='relative mb-4'>
+                        <input type="password" placeholder="Password" id="password"
+                            class="w-full bg-[#e6e6e6] rounded-[4px] outline-none text-black py-[10px] px-[35px] border-[1px] border-solid border-[#e6e6e6] placeholder:text-[#777] placeholder:text-[18px] placeholder:font-semibold"
+                            required />
+                        <i class="fa-solid fa-lock text-[20px] text-primary absolute left-[10px] top-[27%]"></i>
+                    </div>
+                    <p class='text-red-500  font-semibold mx-[10px] mb-[15px]' id="error"></p>
+                    <button type="sumbit" id="sumbit"
+                        class="w-full bg-primary rounded-[4px] py-[10px] font-semibold text-[20px] text-white  border-[1px] border-solid border-primary duration-500 hover:bg-transparent hover:text-primary">Login</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <!-- End Log in -->
+    <!-- Script Log In File -->
+    <script src="./js/login.js"></script>
+</body>
+
+</html>

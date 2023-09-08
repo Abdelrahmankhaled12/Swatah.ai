@@ -1,0 +1,18 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+tr th {
+    padding: 0.5rem 0.5rem;
+    background-color:#921c30;
+    color:white;
+
+}
+
+tr td {
+    text-align: center;
+    border-bottom: 1px solid #7777773b;
+    padding: 0.5rem 0.5rem;
+    font-size: 18px;
+    font-weight: 600;
+}
